@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'veneerregular';
+    src: url('../fonts/veneer-webfont.eot');
+    src: url('../fonts/veneer-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/veneer-webfont.woff2') format('woff2'),
+         url('../fonts/veneer-webfont.woff') format('woff'),
+         url('../fonts/veneer-webfont.ttf') format('truetype'),
+         url('../fonts/veneer-webfont.svg#veneerregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

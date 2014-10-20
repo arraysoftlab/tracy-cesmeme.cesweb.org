@@ -1,0 +1,377 @@
+@media screen and (min-width: 1281px) and (max-width: 1447px) {
+	
+.wrapper {margin:0 auto; width:100%;}
+.container {width:98%; margin:0 auto;}
+.header		{width:100%; margin:0 auto; position: relative;}
+.header h2	{margin:91px 0 99px; font-size:62px; line-height:68px;  padding:26px 0; background:url(../images/border.png) no repeat; background-size:100% 100%; } 
+.trade-mark								{color: #5ecdd8;
+    display: inline-block;
+    font-size: 15px;
+    left: -10px;
+    line-height: 20px;
+	padding-top: 10px;
+    position: relative;
+    top: -40px; }
+
+.main-content								{margin:0 auto; width:100%;}
+.banner										{width:74%; margin:0 13% 96px 13%; float:left;}
+.banner-image								{width:100%; height:auto; float:left; margin:0 0 85px 0; float:left;}
+.banner-image img							{width:100%; height:auto;}
+.banner	p									{width:92%; margin:0 4% 90px; font-size:21px; line-height:26px;}
+.start										{font-size:26px; line-height:30px; margin:0 32%; padding:12px 3%; width:33%;}
+
+.multilayer									{width:74%; margin:0 13% 96px 13%; float:left;}
+.sub-container									{width:98%; margin:0 1%;}
+.container-image								{width:100%; margin:0 0 11px 0; height: auto;}
+.container-image img							{width:100%; height:auto; position:relative;}
+.container-image h3							{font-size:45px; line-height:49px; padding: 5% 0; position:relative; top:0; width: 95%; text-align:center;}
+
+.buttons									{width: 100%;;}
+.buttons ul									{width:100%; margin-bottom:114px;}
+.buttons ul	li								{width:100%; margin-bottom:11px;}
+.buttons ul	li a							{font-size:32px; line-height:38px; padding:5px 0; width:100%;}
+
+#what h3									{margin:0 21% 0 21%; padding:22px 0 16px; top:0; width:58%; text-align:center;}
+#which h3									{margin:0 6% 0 7%; padding:45px 0 42px; top:0; width:87%; text-align:center;}
+
+.main-content								{width:100%;}
+.main-content h1								{font-size: 105px; line-height: 110px; margin:0 0 60px;}
+
+.post										{width:61%; margin:0 18% 0 21%;}
+.postimage									{width:100%; }
+.postimage img								{width:99%; height:auto;}
+
+.social-group								{width:100%; }
+.social-group h4								{width:100%; padding:84px 0 15px 0; font-size:26px; line-height:32px;}
+.social-group ul.share						{width:100%;}
+.social-group ul.share li					{ width:25%; margin:0 1% 0 0;}
+.social-group ul.share li a img				{width:100%; height:auto;}
+.social-group ul	li.last						{margin:0;}
+
+.download									{width:45%;}
+
+.highlight									{width:68%;}
+.highlight p								{width:60%; font-size:26px; line-height:32px;}
+
+#footer										{width:100%;}
+.footer										{width:100%; text-align:center; padding:10px 0 25px;}
+.footer	p									{font-size:13px; line-height:16px; padding-top:15px;}
+.terms										{font-size:13px; line-height:16px}
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+.wrapper {margin:0 auto; width:100%;}
+.container {width:98%; margin:0 auto;}
+.header		{width:100%; margin:0 auto; position: relative;}
+.header h2	{margin:80px 0 60px; font-size:50px; line-height:55px;  padding:30px 0; background:url(../images/border.png) no repeat; background-size:100% 100%;} 
+.trade-mark								{color: #5ecdd8;
+    display: inline-block;
+    font-size: 15px;
+    left: -10px;
+    line-height: 20px;
+	padding-top: 10px;
+    position: relative;
+    top: -28px; }
+
+.main-content								{margin:0 auto; width:100%;}
+.banner										{width:74%; margin:0 13% 76px 13%; float:left;}
+.banner-image								{width:100%; height:auto; float:left; margin:0px 0px 68px; float:left;}
+.banner-image img							{width:100%; height:auto;}
+.banner	p									{width:92%; margin:0 4% 70px; font-size:16px; line-height:22px;}
+.start										{font-size:22px; line-height:26px; margin:0 32%; padding:12px 3%; width:33%;}
+
+.multilayer									{width:74%; margin:0 13% 30px; float:left;}
+.sub-container									{width:98%; margin:0 1%;}
+.container-image								{width:100%; margin:0 0 11px 0; height: auto;}
+.container-image img							{width:100%; height:auto; position:relative;}
+.container-image h3							{font-size:36px; line-height:40px; padding: 5% 0; position:relative; top:0; width:95%; text-align:center;}
+
+.buttons									{width: 100%;}
+.buttons ul									{width:100%; margin-bottom:90px;}
+.buttons ul	li								{width:100%; margin-bottom:11px;}
+.buttons ul	li a							{font-size:25px; line-height:30px; padding:5px 0; width:100%;}
+
+#what h3									{margin:0 21% 0 21%; padding:14px 0 15px; top:0; width:58%; text-align:center;}
+#which h3									{margin:0 6% 0 7%; padding:33px 0 36px;  top:0; width:87%; text-align:center;}
+
+.main-content								{width:100%;}
+.main-content h1								{font-size: 80px; line-height: 87px; margin:0 0 60px;}
+
+.post										{width:61%; margin:0 18% 0 21%;}
+.postimage									{width:100%; }
+.postimage img								{width:99%; height:auto;}
+
+.social-group								{width:100%; }
+.social-group h4								{width:100%; padding:55px 0 15px; font-size:24px; line-height:28px;}
+.social-group ul.share						{width:100%;}
+.social-group ul.share li					{ width:25%; margin:0 1% 0 0;}
+.social-group ul.share li a img				{width:100%; height:auto;}
+.social-group ul	li.last						{margin:0;}
+
+.download									{width:53%;}
+
+.highlight									{width:68%;}
+.highlight p								{width:60%; font-size:21px; line-height:26px;}
+
+#footer										{width:100%;}
+.footer										{width:100%; text-align:center; padding:10px 0 25px;}
+.footer	p									{font-size:13px; line-height:16px; padding-top:15px;}
+.terms										{font-size:13px; line-height:16px}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+.wrapper {margin:0 auto; width:100%;}
+.container {width:98%; margin:0 auto;}
+.header		{width:100%; margin:0 auto; position: relative;}
+.header h2	{margin:80px 0 60px; font-size:38px; line-height:42px;  padding:18px 0;  background:url(../images/border.png) no repeat; background-size:100% 100%;} 
+
+.trade-mark								{color: #5ecdd8;
+    display: inline-block;
+    font-size: 15px;
+    left: -7px;
+    line-height: 20px;
+	padding-top: 10px;
+    position: relative;
+    top: -20px; }
+
+.main-content								{margin:0 auto; width:100%;}
+.banner										{width:74%; margin:0 13% 76px 13%; float:left;}
+.banner-image								{width:100%; height:auto; float:left; margin:0px 0px 68px; float:left;}
+.banner-image img							{width:100%; height:auto;}
+.banner	p									{width:92%; margin:0 4% 70px; font-size:15px; line-height:22px;}
+.start										{font-size:16px; line-height:20px; margin:0 32%; padding:12px 3%; width:33%;}
+
+.multilayer									{width:74%; margin:0 13% 0px; float:left;}
+.sub-container									{width:98%; margin:0 1%;}
+.container-image								{width:100%; margin:0 0 11px 0; height: auto;}
+.container-image img							{width:100%; height:auto; position:relative;}
+.container-image h3							{font-size:26px; line-height:30px; padding: 5% 0; position:relative; top:0; width:95%; text-align:center;}
+
+.buttons									{width: 100%;}
+.buttons ul									{width:100%; margin-bottom:90px;}
+.buttons ul	li								{width:100%; margin-bottom:11px;}
+.buttons ul	li a							{font-size:22px; line-height:28px; padding:5px 0; width:100%;}
+
+#what h3									{margin:0 21% 0 21%; padding:14px 0 4px; top:0; width:58%; text-align:center;}
+#which h3									{margin:0 6% 0 7%; padding:26px 0 24px; top:0; width:87%; text-align:center;}
+
+.main-content								{width:100%;}
+.main-content h1								{font-size: 70px; line-height: 75px; margin:0 0 60px;}
+
+.post										{width:61%; margin:0 18% 0 21%;}
+.postimage									{width:100%; }
+.postimage img								{width:99%; height:auto;}
+
+.social-group								{width:100%; }
+.social-group h4								{width:100%; padding:55px 0 15px; font-size:22px; line-height:26px;}
+.social-group ul.share						{width:100%;}
+.social-group ul.share li					{ width:25%; margin:0 1% 0 0;}
+.social-group ul.share li a img				{width:100%; height:auto;}
+.social-group ul	li.last						{margin:0;}
+
+.download									{width:70%;}
+
+.highlight									{width:68%;}
+.highlight p								{width:48%; font-size:15px; line-height:20px;}
+
+#footer										{width:100%;}
+.footer										{width:100%; text-align:center; padding:10px 0 25px;}
+.footer	p									{font-size:13px; line-height:16px; padding-top:15px;}
+.terms										{font-size:13px; line-height:16px}	
+}
+
+
+
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+.wrapper {margin:0 auto; width:100%;}
+.container {width:98%; margin:0 auto;}
+.header		{width:100%; margin:0 auto; position: relative;}
+.header h2	{margin:80px 0 36px; font-size:26px; line-height:30px;  padding:14px 0; background:url(../images/border.png) no repeat; background-size:100% 100%;}
+.trade-mark								{color: #5ecdd8;
+    display: inline-block;
+    font-size: 15px;
+    left: -4px;
+    line-height: 20px;
+	padding-top: 10px;
+    position: relative;
+    top: -9px; } 
+
+.main-content								{margin:0 auto; width:100%;}
+.banner										{width:74%; margin:0 13% 76px 13%; float:left;}
+.banner-image								{width:100%; height:auto; float:left; margin:0 0 45px; float:left;}
+.banner-image img							{width:100%; height:auto;}
+.banner	p									{width:92%; margin:0 4% 45px; font-size:14px; line-height:20px;}
+.start										{font-size:13px; line-height:20px; margin:0 32%; padding:12px 3%; width:33%;}
+
+.multilayer									{width:74%; margin:0 13% 0px; float:left;}
+.sub-container									{width:98%; margin:0 1%;}
+.container-image								{width:100%; margin:0 0 11px 0; height: auto;}
+.container-image img							{width:100%; height:auto; position:relative;}
+.container-image h3							{font-size:17px; line-height:22px; padding: 5% 0; position:relative; top:0; width:100%;}
+
+.buttons									{width: 100%;}
+.buttons ul									{width:100%; margin-bottom:70px;}
+.buttons ul	li								{width:100%; margin-bottom:11px;}
+.buttons ul	li a							{font-size:18px; line-height:28px; padding:5px 0; width:100%;}
+
+#what h3									{margin:0 21% 0 21%; padding:14px 0 5px; top:0; text-align:center; width:58%}
+#which h3									{margin:0 6% 0 7%; padding:26px 0 24px; top:0; width:87%; text-align:center;}
+
+.main-content								{width:100%;}
+.main-content h1								{font-size: 53px; line-height: 60px; margin:0 0 60px;}
+
+.post										{width:61%; margin:0 18% 0 21%;}
+.postimage									{width:100%; }
+.postimage img								{width:98%; height:auto;}
+
+.social-group								{width:100%; }
+.social-group h4								{width:100%; padding:55px 0 15px; font-size:24px; line-height:28px;}
+.social-group ul.share						{width:100%;}
+.social-group ul.share li					{ width:32%; margin:0 1% 0 0;}
+.social-group ul.share li a img				{width:100%; height:auto;}
+.social-group ul	li.last						{margin:0;}
+
+.download									{width:90%;}
+
+.highlight									{width:68%;}
+.highlight p								{width:80%; font-size:15px; line-height:20px;}
+
+#footer										{width:100%;}
+.footer										{width:100%; text-align:center; padding:10px 0 25px;}
+.footer	p									{font-size:11px; line-height:16px; padding-top:15px;}
+.terms										{font-size:11px; line-height:16px}		
+
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 599px) {
+.wrapper {margin:0 auto; width:100%;}
+.container {width:98%; margin:0 auto;}
+.header		{width:100%; margin:0 auto; position: relative;}
+.header h2	{margin:40px 0 36px; font-size:32px; line-height:36px;  padding:15px 0; background:url(../images/border.png) no repeat; background-size:100% 100%; } 
+.trade-mark								{color: #5ecdd8;
+    display: inline-block;
+    font-size: 15px;
+    left: -4px;
+    line-height: 20px;
+	padding-top: 10px;
+    position: relative;
+    top: -14px; } 
+
+.main-content								{margin:0 auto; width:100%;}
+.banner										{width:90%; margin:0 5% 76px; float:left;}
+.banner-image								{width:100%; height:auto; float:left; margin:0 0 25px; float:left;}
+.banner-image img							{width:100%; height:100px;}
+.banner	p									{width:100%; margin:0 0 45px; font-size:14px; line-height:20px; text-align:left;}
+.start										{font-size:13px; line-height:20px; margin:0 20%; padding:12px 3%; width:54%;}
+
+.multilayer									{width:90%; margin:0 5%; float:left;}
+.sub-container									{width:98%; margin:0 1%;}
+.container-image								{width:100%; margin:0 0 11px 0; height: auto;}
+.container-image img							{width:100%; height:110px; position:relative;}
+.container-image h3							{font-size:28px; line-height:33px; padding: 5% 0; position:relative; top:0; text-align:center; width:90%; margin:0 5%;}
+
+.buttons									{width: 100%;}
+.buttons ul									{width:100%; margin-bottom:70px;}
+.buttons ul	li								{width:100%; margin-bottom:11px;}
+.buttons ul	li a							{font-size:14px; line-height:28px; padding:5px 0; width:100%;}
+
+#what h3									{margin:0 15%; padding:8px 0 4px; top:0; width:70%; text-align:center;}
+#which h3									{margin:0 6% 0 7%; padding:17px 0 14px; top:0; width:87%; text-align:center;}
+
+.main-content								{width:100%;}
+.main-content h1								{font-size: 40px; line-height: 45px; margin:0 0 50px;}
+
+.post										{width:90%; margin:0 5%;}
+.postimage									{width:100%; }
+.postimage img								{width:98%; height:auto;}
+
+.social-group								{width:100%; }
+.social-group h4								{width:100%; padding:35px 0 15px; font-size:20px; line-height:26px;}
+.social-group ul.share						{width:50%;}
+.social-group ul.share li					{width:80%; margin:0;}
+.social-group ul.share li a img				{width:100%; height:auto;}
+.social-group ul	li.last						{margin:0;}
+
+.download									{width:90%;}
+.download ul li								{font-size: 11px;}
+
+.highlight									{width:90%;}
+.highlight p								{width:80%; font-size:15px; line-height:20px;}
+
+#footer										{width:100%;}
+.footer										{width:100%; text-align:center; padding:10px 0 25px;}
+.footer	p									{font-size:11px; line-height:16px;  padding: 15px 10% 0;}
+.terms										{font-size:11px; line-height:16px}		
+
+	
+ 
+	}
+	
+	
+
+ @media only screen and (min-width: 320px) and (max-width: 479px) {
+.wrapper {margin:0 auto; width:100%;}
+.container {width:98%; margin:0 auto;}
+.header		{width:100%; margin:0 auto; position: relative; }
+.header h2	{margin:40px 0 36px; font-size:32px; line-height:36px;  padding:38px 0; background:url(../images/border.png) no repeat; background-size:100% 100%;} 
+.trade-mark								{color: #5ecdd8;
+    display: inline-block;
+    font-size: 15px;
+    left: -4px;
+    line-height: 20px;
+	padding-top: 10px;
+    position: relative;
+    top: -14px; } 
+
+.main-content								{margin:0 auto; width:100%;}
+.banner										{width:96%; margin:0 2% 40px; float:left;}
+.banner-image								{width:100%; height:auto; float:left; margin:0 0 25px; float:left;}
+.banner-image img							{width:100%; height:auto;}
+.banner	p									{width:100%; margin:0 0 45px; font-size:14px; line-height:20px; text-align:center;}
+.start										{font-size:18px; line-height:24px; margin:0%; padding:12px 3%; width:95%;}
+
+.multilayer									{width:96%; margin:0 2% 0px; float:left;}
+.sub-container									{width:98%; margin:0 1%;}
+.container-image								{width:100%; margin:0 0 11px 0; height: auto;}
+.container-image img							{width:100%; height:130px; position:relative;}
+.container-image h3							{font-size:27px; line-height:32px; padding: 5% 0; position:relative; top:0; text-align:center; width:100%;}
+
+.buttons									{width: 100%;}
+.buttons ul									{width:100%; margin-bottom:25px;}
+.buttons ul	li								{width:100%; margin-bottom:11px;}
+.buttons ul	li a							{font-size:20px; line-height:28px; padding:5px 2%; width:96%;}
+
+#what h3									{margin: 0 5%; padding: 8px 0 4px; top:0; text-align:center; width: 90%;}
+#which h3									{margin:0 6% 0 7%; padding:17px 0 14px; position:top:0; text-align:center; width:87%;}
+
+.main-content								{width:100%;}
+.main-content h1								{font-size: 30px; line-height: 37px; margin:0 0 25px;}
+
+.post										{width:96%; margin:0 2%;}
+.postimage									{width:100%; }
+.postimage img								{width:98%; height:auto;}
+
+.social-group								{width:100%; }
+.social-group h4								{width:100%; padding:35px 0 15px; font-size:20px; line-height:26px;}
+.social-group ul.share						{width:60%;}
+.social-group ul.share li					{width:90%; margin:0;}
+.social-group ul.share li a img				{width:100%; height:auto;}
+.social-group ul	li.last						{margin:0;}
+
+.download									{width:90%;}
+.download ul li								{font-size: 11px;}
+
+.highlight									{width:90%;}
+.highlight p								{width:80%; font-size:19px; line-height:24px;}
+
+#footer										{width:100%;}
+.footer										{width:100%; text-align:center; padding:10px 0 25px;}
+.footer	p									{font-size:11px; line-height:16px;  padding: 15px 10% 0;}
+.terms										{font-size:11px; line-height:16px}		
+
+
+}
