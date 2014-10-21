@@ -36,24 +36,19 @@
                     CES Meme Generator. Using proprietary algorithms and decades of data, the CES Meme Generator will automatically create a message you can share on Facebook and
                     other social media to highlight why you’ll be at the 2015 CES. All you have to do is answer a few simple and fun questions.</p>
                 <span class="clear"></span>
-                <a href="#" class="start">Start your CES meme-ing here.</a>
+                <a href="#" class="start-meme">Start your CES meme-ing here.</a>
             </div>
             <span class="clear"></span>
-            <!-- Header Starts -->
-            <div class="header">
-                <h2>The Official 2015 International CES <span class="trade-mark">&reg;</span> Meme Generator</h2>
-            </div>
-            <!-- Header ends -->
-            <div class="multilayer">
+            <div class="feedback">
                 <div class="sub-container">
                     <div class="container-image" id="qone">
                         <h3>How many years have you been coming to CES</h3>
                     </div>
                     <span class="clear"></span>
-                    <div class="buttons">
+                    <div class="feedback-options">
                         <ul>
                             <li><a href="#" class="one">It’s my first time</a></li>
-                            <li><a href="#" class="two selected">1–5 years</a></li>
+                            <li><a href="#" class="two">1–5 years</a></li>
                             <li><a href="#" class="three">5-10 years</a></li>
                             <li><a href="#" class="four">10-Do you really expect me to remember?</a></li>
                         </ul>
@@ -66,7 +61,7 @@
                         <h3>What's your perfect amount of sleep each night at CES?</h3>
                     </div>
                     <span class="clear"></span>
-                    <div class="buttons">
+                    <div class="feedback-options">
                         <ul>
                             <li><a href="#" class="five">10–12 hours</a></li>
                             <li><a href="#" class="six">8–10 hours</a></li>
@@ -82,7 +77,7 @@
                         <h3>Which would best describe your goals at CES?</h3>
                     </div>
                     <span class="clear"></span>
-                    <div class="buttons">
+                    <div class="feedback-options">
                         <ul>
                             <li><a href="#" class="nine">Simply put, change everything</a></li>
                             <li><a href="#" class="ten">Double our stock price</a></li>
@@ -98,7 +93,7 @@
                         <h3>What do you expect to do at the 2015 CES?</h3>
                     </div>
                     <span class="clear"></span>
-                    <div class="buttons">
+                    <div class="feedback-options">
                         <ul>
                             <li><a href="#" class="thirteen">Run out of business cards</a></li>
                             <li><a href="#" class="fourteen">Add 100 contacts to your phone</a></li>
@@ -114,7 +109,7 @@
                         <h3>What best describes you and your team?</h3>
                     </div>
                     <span class="clear"></span>
-                    <div class="buttons">
+                    <div class="feedback-options">
                         <ul>
                             <li><a href="#" class="seventeen">Domestic attendees</a></li>
                             <li><a href="#" class="eighteen">International attendees </a></li>
@@ -124,37 +119,39 @@
                         <span class="clear"></span>
                     </div>
                     <span class="clear"></span>
-                    <a href="#" class="start">CREATE YOUR CES MEME</a>
+                    <a href="#" class="create-meme">CREATE YOUR CES MEME</a>
                 </div>
             </div>
             <span class="clear"></span>
-            <h1>CONGRATULATIONS! <br> HERE’S YOUR CES MEME</h1>
-            <div class="post">
-                <div class="random-image"><img src="images/random-image.png" alt="Yeah! I shall be There" width="876" height="876"></div>
-                <div class="social-group">
-                    <h4>Now that you have the perfect CES meme, why not share it ?</h4>
-                    <h2>GIVE IT A CAPTION</h2>
-                    <textarea class="caption"
-                              placeholder="I just generated the world's greatest CES Meme. Be sure to create your own CES Meme and share it to promote why you're attending the show. Don't forget to tag it #CES2015"></textarea>
-                    <ul class="share">
-                        <li><a href="#"><img src="images/fb-share-btn.png" alt="share on facebook" width="218" height="52"></a></li>
-                        <li><a href="#"><img src="images/twt-share-btn.png" alt="share on twitter" width="219" height="53"></a></li>
-                        <li class="last"><a href="#"><img src="images/gp-share-btn.png" alt="share on google plus" width="219" height="54"></a></li>
-                    </ul>
-                    <span class="clear"></span>
-                    <div class="download">
-                        <ul>
-                            <li><a href="#">Download File</a></li>
-                            <li>Right click (Option click on Mac) and “Save Link As…”</li>
+            <div class="ces-meme">
+                <h1>CONGRATULATIONS! <br> HERE’S YOUR CES MEME</h1>
+                <div class="post">
+                    <div class="random-image"><img src="images/random-image.png" alt="Yeah! I shall be There" width="876" height="876"></div>
+                    <div class="social-group">
+                        <h4>Now that you have the perfect CES meme, why not share it ?</h4>
+                        <h2>GIVE IT A CAPTION</h2>
+                        <textarea class="caption"
+                                  placeholder="I just generated the world's greatest CES Meme. Be sure to create your own CES Meme and share it to promote why you're attending the show. Don't forget to tag it #CES2015"></textarea>
+                        <ul class="share">
+                            <li><a href="#"><img src="images/fb-share-btn.png" alt="share on facebook" width="218" height="52"></a></li>
+                            <li><a href="#"><img src="images/twt-share-btn.png" alt="share on twitter" width="219" height="53"></a></li>
+                            <li class="last"><a href="#"><img src="images/gp-share-btn.png" alt="share on google plus" width="219" height="54"></a></li>
                         </ul>
                         <span class="clear"></span>
+                        <div class="download">
+                            <ul>
+                                <li><a href="#">Download File</a></li>
+                                <li>Right click (Option click on Mac) and “Save Link As…”</li>
+                            </ul>
+                            <span class="clear"></span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <span class="clear"></span>
-            <div class="highlight">
-                <p>We can’t wait to see you at the 2015 CES! Check out our awesome schedule of conferences and events <a href="http://cesweb.org/conference" class="cesweb">CESweb.org/conference</a>.
-                </p>
+                <span class="clear"></span>
+                <div class="highlight">
+                    <p>We can’t wait to see you at the 2015 CES! Check out our awesome schedule of conferences and events <a href="http://cesweb.org/conference" class="cesweb">CESweb.org/conference</a>.
+                    </p>
+                </div>
             </div>
         </div>
         <span class="clear"></span>
