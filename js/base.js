@@ -38,4 +38,7 @@ $(function() {
             }
         }
     });
+    $('#fb-share-btn').click(function() {
+        //$(this).attr('href', $(this).attr('href') + '&picture=' + $('#ces-meme-picture').attr('src') + '&message=' + $('#ces-meme-caption').val())
+    });
 });

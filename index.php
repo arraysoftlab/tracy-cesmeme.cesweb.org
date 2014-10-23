@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -13,11 +14,12 @@
     <link href="css/responsive.css" rel="stylesheet" type="text/css" media="all">
     <!-- END: STYLESHEET -->
     <!-- SET: SCRIPTS -->
-    <script src="js/jquery-1.11.1.js" type="text/javascript"></script>
+    <script src="js/jquery-2.1.1.js" type="text/javascript"></script>
     <script src="js/base.js" type="text/javascript"></script>
     <!-- END: SCRIPTS -->
 </head>
 <body>
+<?php include('includes/share-on-fb.php') ?>
 <!-- wrapper starts -->
 <div class="wrapper">
     <!-- container starts -->
@@ -32,9 +34,7 @@
         <div class="main-content">
             <div class="banner">
                 <div class="banner-image"><img src="images/main_img.png" alt="banner-image" height="245" width="1081"></div>
-                <p>CES is awesome. Memes are awesome. Put them together and you have the ultra-awesome
-                    CES Meme Generator. Using proprietary algorithms and decades of data, the CES Meme Generator will automatically create a message you can share on Facebook and
-                    other social media to highlight why you’ll be at the 2015 CES. All you have to do is answer a few simple and fun questions.</p>
+                <p><?php echo $description ?></p>
                 <span class="clear"></span>
                 <a href="#" class="start-meme">Start your CES meme-ing here.</a>
             </div>
@@ -126,14 +126,16 @@
             <div class="ces-meme">
                 <h1>CONGRATULATIONS! <br> HERE’S YOUR CES MEME</h1>
                 <div class="post">
-                    <div class="random-image"><img src="images/random-image.png" alt="Yeah! I shall be There" width="876" height="876"></div>
+                    <div class="random-image">
+                        <img id="ces-meme-picture" src="http://<?php echo $_SERVER[HTTP_HOST] . $_SERVER[REQUEST_URI] ?>assets/meme/international/astronauts.png"
+                                                   alt="Yeah! I shall be There" width="876" height="876">
+                    </div>
                     <div class="social-group">
                         <h4>Now that you have the perfect CES meme, why not share it ?</h4>
                         <h2>GIVE IT A CAPTION</h2>
-                        <textarea class="caption"
-                                  placeholder="I just generated the world's greatest CES Meme. Be sure to create your own CES Meme and share it to promote why you're attending the show. Don't forget to tag it #CES2015"></textarea>
+                        <textarea id="ces-meme-caption" placeholder="<?php echo $message ?>"></textarea>
                         <ul class="share">
-                            <li><a href="#"><img src="images/fb-share-btn.png" alt="share on facebook" width="218" height="52"></a></li>
+                            <li><a id="fb-share-btn" href="?share_on_fb"><img src="images/fb-share-btn.png" alt="share on facebook" width="218" height="52"></a></li>
                             <li><a href="#"><img src="images/twt-share-btn.png" alt="share on twitter" width="219" height="53"></a></li>
                             <li class="last"><a href="#"><img src="images/gp-share-btn.png" alt="share on google plus" width="219" height="54"></a></li>
                         </ul>
