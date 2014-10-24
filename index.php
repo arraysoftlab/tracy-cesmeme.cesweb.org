@@ -118,7 +118,8 @@
                         <span class="clear"></span>
                     </div>
                     <span class="clear"></span>
-                    <a href="#" class="create-meme">CREATE YOUR CES MEME</a>
+                    <a id="create-meme" href="#create-meme">CREATE YOUR CES MEME</a>
+                    <span class="validation-error" style="display: none">Please answer all questions first.</span>
                 </div>
             </div>
             <span class="clear"></span>

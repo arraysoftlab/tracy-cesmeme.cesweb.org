@@ -1,26 +1,34 @@
 $(function() {
+    var total_questions = 5;
+    var answered_count = 0;
     $('.start-meme').click(function(e) {
         e.preventDefault();
         $('.banner').hide('slow', function() {
             $('.feedback').show();
         });
     });
-    $('.create-meme').click(function(e) {
+    $('#create-meme').click(function(e) {
         e.preventDefault();
-        $('.feedback').hide('slow', function() {
-            $('.ces-meme').show('slow', function() {
-                updateFbSubmit($('#ces-meme-caption').attr('placeholder'));
-                $('#ces-meme-caption').on('change keyup paste', function() {
-                    updateFbSubmit($(this).val());
+        if(answered_count == total_questions) {
+            $('.feedback').hide('slow', function() {
+                $('.ces-meme').show('slow', function() {
+                    var captionBox = $('#ces-meme-caption');
+                    updateFbSubmit(captionBox.attr('placeholder'));
+                    captionBox.on('change keyup paste', function() {
+                        updateFbSubmit($(this).val());
+                    });
                 });
             });
-        });
+        } else {
+            $('.validation-error').show();
+        }
     });
     $('.sub-container').each(function(idx, el) {
         $(el).attr('id', 'feedback-' + (idx+1));
         if($('.sub-container').length - 1 > idx) {
             $(el).find('.feedback-options li a').attr('href', '#feedback-' + (idx+2));
         } else {
+            $(el).find('.feedback-options li a').attr('href', '#create-meme');
             $(el).find('.feedback-options li a').click(function(e) {
                 e.preventDefault();
             });
@@ -28,13 +36,32 @@ $(function() {
     });
     var $options = $('.feedback-options li a');
     $options.click(function() {
-        $(this).closest('ul').find('li a').removeClass('selected');
+        var selected_option = $(this).closest('ul').find('li a.selected');
+        if(selected_option.length) {
+            selected_option.removeClass('selected');
+            removeAnswer();
+        }
         $(this).addClass('selected');
+        addAnswer();
+        go(this);
     });
-    $options.click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+
+    function addAnswer() {
+        answered_count++;
+        if(answered_count == total_questions) {
+            $('.validation-error').hide();
+            go($('#create-meme')[0])
+        }
+    }
+
+    function removeAnswer() {
+        answered_count--;
+    }
+
+    function go(from) {
+        if (location.pathname.replace(/^\//,'') == from.pathname.replace(/^\//,'') && location.hostname == from.hostname) {
+            var target = $(from.hash);
+            target = target.length ? target : $('[name=' + from.hash.slice(1) +']');
             if (target.length) {
                 $('html,body').animate({
                     scrollTop: target.offset().top
@@ -42,7 +69,7 @@ $(function() {
                 return false;
             }
         }
-    });
+    }
 
     var $fb_btn = $('#fb-share-btn');
     var $fb_ini_href = $fb_btn.attr('href');

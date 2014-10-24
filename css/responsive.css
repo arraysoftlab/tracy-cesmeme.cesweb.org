@@ -68,7 +68,7 @@
     }
 
     .start-meme,
-    .create-meme {
+    #create-meme {
         font-size: 26px;
         line-height: 30px;
         margin: 0 32%;
@@ -305,7 +305,7 @@
     }
 
     .start-meme,
-    .create-meme {
+    #create-meme {
         font-size: 22px;
         line-height: 26px;
         margin: 0 32%;
@@ -542,7 +542,7 @@
     }
 
     .start-meme,
-    .create-meme {
+    #create-meme {
         font-size: 16px;
         line-height: 20px;
         margin: 0 32%;
@@ -778,7 +778,7 @@
     }
 
     .start-meme,
-    .create-meme {
+    #create-meme {
         font-size: 13px;
         line-height: 20px;
         margin: 0 32%;
@@ -1015,7 +1015,7 @@
     }
 
     .start-meme,
-    .create-meme {
+    #create-meme {
         font-size: 13px;
         line-height: 20px;
         margin: 0 20%;
@@ -1258,7 +1258,7 @@
     }
 
     .start-meme,
-    .create-meme {
+    #create-meme {
         font-size: 18px;
         line-height: 24px;
         margin: 0%;

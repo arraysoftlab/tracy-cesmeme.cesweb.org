@@ -185,7 +185,7 @@ body {
 }
 
 .start-meme,
-.create-meme{
+#create-meme{
     font-size: 32px;
     color: #00688f;
     text-align: center;
@@ -199,7 +199,7 @@ body {
 }
 
 .start-meme:hover,
-.create-meme:hover {
+#create-meme:hover {
     background: #afb613;
     color: #ffffff;
 }
