@@ -47,7 +47,8 @@ $(function() {
     var $fb_btn = $('#fb-share-btn');
     var $fb_ini_href = $fb_btn.attr('href');
     function updateFbSubmit(message) {
-        var query = 'share_on_fb&picture=' + encodeURIComponent($('#ces-meme-picture').attr('src')) + '&message=' + message + '&query_end';
+        var query = 'share_on_fb&picture=' + encodeURIComponent($('#ces-meme-picture').attr('src')).replace(/\%20/g, '+') +
+            '&message=' + encodeURIComponent(message).replace(/\%20/g, '+') + '&query_end';
         $fb_btn.attr('href', $fb_ini_href + '?' + query);
         console.log(decodeURIComponent($fb_btn.attr('href')))
     }
