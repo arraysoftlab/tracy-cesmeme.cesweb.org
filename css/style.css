@@ -402,13 +402,10 @@ body {
 }
 
 .random-image {
-    width: 885px;
     float: left;
 }
 
 .random-image img {
-    width: 876;
-    height: 876px;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     border: 4px solid #000000;
@@ -492,7 +489,7 @@ body {
     color: #2cbfd5;
 }
 
-.caption {
+#ces-meme-caption {
     background: #f1f1f1;
     border: 0;
     padding: 10px;

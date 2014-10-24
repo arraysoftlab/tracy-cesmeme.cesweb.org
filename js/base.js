@@ -8,7 +8,12 @@ $(function() {
     $('.create-meme').click(function(e) {
         e.preventDefault();
         $('.feedback').hide('slow', function() {
-            $('.ces-meme').show();
+            $('.ces-meme').show('slow', function() {
+                updateFbSubmit($('#ces-meme-caption').attr('placeholder'));
+                $('#ces-meme-caption').on('change keyup paste', function() {
+                    updateFbSubmit($(this).val());
+                });
+            });
         });
     });
     $('.sub-container').each(function(idx, el) {
@@ -38,7 +43,12 @@ $(function() {
             }
         }
     });
-    $('#fb-share-btn').click(function() {
-        //$(this).attr('href', $(this).attr('href') + '&picture=' + $('#ces-meme-picture').attr('src') + '&message=' + $('#ces-meme-caption').val())
-    });
+
+    var $fb_btn = $('#fb-share-btn');
+    var $fb_ini_href = $fb_btn.attr('href');
+    function updateFbSubmit(message) {
+        var query = 'share_on_fb&picture=' + encodeURIComponent($('#ces-meme-picture').attr('src')) + '&message=' + message + '&query_end';
+        $fb_btn.attr('href', $fb_ini_href + '?' + query);
+        console.log(decodeURIComponent($fb_btn.attr('href')))
+    }
 });

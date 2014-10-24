@@ -1,4 +1,3 @@
-<?php session_start(); ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -19,7 +18,7 @@
     <!-- END: SCRIPTS -->
 </head>
 <body>
-<?php include('includes/share-on-fb.php') ?>
+<?php include('includes/config.php') ?>
 <!-- wrapper starts -->
 <div class="wrapper">
     <!-- container starts -->
@@ -127,15 +126,19 @@
                 <h1>CONGRATULATIONS! <br> HERE’S YOUR CES MEME</h1>
                 <div class="post">
                     <div class="random-image">
-                        <img id="ces-meme-picture" src="http://<?php echo $_SERVER[HTTP_HOST] . $_SERVER[REQUEST_URI] ?>assets/meme/international/astronauts.png"
-                                                   alt="Yeah! I shall be There" width="876" height="876">
+                        <img id="ces-meme-picture" src="<?php echo $base_url . $context_uri ?>/assets/meme/international/astronauts.png"
+                                                   alt="Yeah! I shall be There" width="100%">
                     </div>
                     <div class="social-group">
                         <h4>Now that you have the perfect CES meme, why not share it ?</h4>
                         <h2>GIVE IT A CAPTION</h2>
                         <textarea id="ces-meme-caption" placeholder="<?php echo $message ?>"></textarea>
                         <ul class="share">
-                            <li><a id="fb-share-btn" href="?share_on_fb"><img src="images/fb-share-btn.png" alt="share on facebook" width="218" height="52"></a></li>
+                            <li>
+                                <a id="fb-share-btn" href="<?php echo $context_uri ?>/includes/share-on-fb.php">
+                                    <img src="images/fb-share-btn.png" alt="share on facebook" width="218" height="52">
+                                </a>
+                            </li>
                             <li><a href="#"><img src="images/twt-share-btn.png" alt="share on twitter" width="219" height="53"></a></li>
                             <li class="last"><a href="#"><img src="images/gp-share-btn.png" alt="share on google plus" width="219" height="54"></a></li>
                         </ul>
