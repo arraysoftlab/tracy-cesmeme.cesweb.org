@@ -12,7 +12,7 @@ answer a few simple and fun questions.";
 
 $domestic_image_dir = 'assets/meme/domestic';
 $international_image_dir = 'assets/meme/international';
-$domestic_images = array_diff(scandir($domestic_image_dir), array('..', '.'));
-$international_images = array_diff(scandir($international_image_dir), array('..', '.'));
+$domestic_images = array_diff(scandir(__DIR__ . '/' . $domestic_image_dir), array('..', '.'));
+$international_images = array_diff(scandir(__DIR__ . '/' . $international_image_dir), array('..', '.'));
 $random_domestic_image = $domestic_images[rand(2, count($domestic_images) + 2 - 1)];
 $random_international_image = $international_images[rand(2, count($international_images) + 2 - 1)];

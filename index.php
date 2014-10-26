@@ -135,11 +135,15 @@
                         <textarea id="ces-meme-caption" placeholder="<?php echo $message ?>"></textarea>
                         <ul class="share">
                             <li>
-                                <a id="fb-share-btn" href="<?php echo $context_uri ?>/includes/share-on-fb.php">
+                                <a id="fb-post-btn" href="<?php echo $context_uri ?>/includes/post-on-facebook.php">
                                     <img src="images/fb-share-btn.png" alt="share on facebook" width="218" height="52">
                                 </a>
                             </li>
-                            <li><a href="#"><img src="images/twt-share-btn.png" alt="share on twitter" width="219" height="53"></a></li>
+                            <li>
+                                <a id="tw-post-btn" href="<?php echo $context_uri ?>/includes/post-on-twitter.php">
+                                    <img src="images/twt-share-btn.png" alt="share on twitter" width="219" height="53">
+                                </a>
+                            </li>
                             <li class="last"><a href="#"><img src="images/gp-share-btn.png" alt="share on google plus" width="219" height="54"></a></li>
                         </ul>
                         <span class="clear"></span>

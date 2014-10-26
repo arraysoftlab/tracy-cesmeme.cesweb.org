@@ -15,9 +15,9 @@ $(function() {
                     var attendFrom = $('.attend-from .feedback-options ul li a.selected').data('option');
                     var captionBox = $('#ces-meme-caption');
                     setMemePicture(attendFrom);
-                    updateFbSubmit(captionBox.attr('placeholder'));
+                    updatePostButtons(captionBox.attr('placeholder'));
                     captionBox.on('change keyup paste', function() {
-                        updateFbSubmit($(this).val());
+                        updatePostButtons($(this).val());
                     });
                 });
             });
@@ -83,12 +83,17 @@ $(function() {
         }
     }
 
-    var $fb_btn = $('#fb-share-btn');
+    var $fb_btn = $('#fb-post-btn');
+    var $tw_btn = $('#tw-post-btn');
     var $fb_ini_href = $fb_btn.attr('href');
-    function updateFbSubmit(message) {
-        var query = 'share_on_fb&picture=' + encodeURIComponent($('#ces-meme-picture').attr('src')).replace(/\%20/g, '+') +
+    var $tw_ini_href = $tw_btn.attr('href');
+    function updatePostButtons(message) {
+        var $picture = $('#ces-meme-picture');
+        var query = 'post_on_fb&picture=' + encodeURIComponent($picture.attr('src')).replace(/\%20/g, '+') +
             '&message=' + encodeURIComponent(message).replace(/\%20/g, '+') + '&query_end';
         $fb_btn.attr('href', $fb_ini_href + '?' + query);
-        console.log(decodeURIComponent($fb_btn.attr('href')))
+        query = 'post_on_tw&picture=' + encodeURIComponent($picture.attr('src')).replace(/\%20/g, '+') +
+            '&message=' + message + '&query_end';
+        $tw_btn.attr('href', $tw_ini_href + '?' + query);
     }
 });
