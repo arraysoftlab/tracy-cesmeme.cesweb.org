@@ -12,7 +12,7 @@ $(function() {
         if(answered_count == total_questions) {
             $('.feedback').hide('slow', function() {
                 $('.ces-meme').show('slow', function() {
-                    var attendFrom = $('#attend-from .feedback-options ul li a.selected').data('option');
+                    var attendFrom = $('.attend-from .feedback-options ul li a.selected').data('option');
                     var captionBox = $('#ces-meme-caption');
                     setMemePicture(attendFrom);
                     updateFbSubmit(captionBox.attr('placeholder'));

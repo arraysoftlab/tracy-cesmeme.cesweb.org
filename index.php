@@ -103,7 +103,7 @@
                     </div>
                     <span class="clear"></span>
                 </div>
-                <div id="attend-from" class="sub-container">
+                <div class="sub-container attend-from">
                     <div class="container-image" id="qfive">
                         <h3>What best describes you and your team?</h3>
                     </div>
