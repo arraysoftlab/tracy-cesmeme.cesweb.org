@@ -14,11 +14,11 @@
     <!-- END: STYLESHEET -->
     <!-- SET: SCRIPTS -->
     <script src="js/jquery-2.1.1.js" type="text/javascript"></script>
-    <script src="js/base.js" type="text/javascript"></script>
+    <script src="js/app.js" type="text/javascript"></script>
     <!-- END: SCRIPTS -->
 </head>
 <body>
-<?php include('includes/config.php') ?>
+<?php include('config.php') ?>
 <!-- wrapper starts -->
 <div class="wrapper">
     <!-- container starts -->
@@ -103,17 +103,17 @@
                     </div>
                     <span class="clear"></span>
                 </div>
-                <div class="sub-container">
+                <div id="attend-from" class="sub-container">
                     <div class="container-image" id="qfive">
                         <h3>What best describes you and your team?</h3>
                     </div>
                     <span class="clear"></span>
                     <div class="feedback-options">
                         <ul>
-                            <li><a href="#" class="seventeen">Domestic attendees</a></li>
-                            <li><a href="#" class="eighteen">International attendees </a></li>
-                            <li><a href="#" class="nineteen">Domestic and international attendees</a></li>
-                            <li><a href="#" class="twenty">We come from the future</a></li>
+                            <li><a href="#" class="seventeen" data-option="domestic">Domestic attendees</a></li>
+                            <li><a href="#" class="eighteen" data-option="international">International attendees </a></li>
+                            <li><a href="#" class="nineteen" data-option="both">Domestic and international attendees</a></li>
+                            <li><a href="#" class="twenty" data-option="future">We come from the future</a></li>
                         </ul>
                         <span class="clear"></span>
                     </div>
@@ -127,8 +127,7 @@
                 <h1>CONGRATULATIONS! <br> HERE’S YOUR CES MEME</h1>
                 <div class="post">
                     <div class="random-image">
-                        <img id="ces-meme-picture" src="<?php echo $base_url . $context_uri ?>/assets/meme/international/astronauts.png"
-                                                   alt="Yeah! I shall be There" width="100%">
+                        <img id="ces-meme-picture" src="" alt="Yeah! I shall be There" width="100%"/>
                     </div>
                     <div class="social-group">
                         <h4>Now that you have the perfect CES meme, why not share it ?</h4>
@@ -177,5 +176,9 @@
     <!-- container ends -->
 </div>
 <!-- wrapper ends -->
+<div id="meme-pictures" style="display: none">
+    <img id="domestic" src="<?php echo "$base_url$context_uri/$domestic_image_dir/$random_domestic_image" ?>"/>
+    <img id="international" src="<?php echo "$base_url$context_uri/$international_image_dir/$random_international_image" ?>"/>
+</div>
 </body>
 </html>

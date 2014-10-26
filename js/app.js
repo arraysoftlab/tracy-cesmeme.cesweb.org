@@ -12,7 +12,9 @@ $(function() {
         if(answered_count == total_questions) {
             $('.feedback').hide('slow', function() {
                 $('.ces-meme').show('slow', function() {
+                    var attendFrom = $('#attend-from .feedback-options ul li a.selected').data('option');
                     var captionBox = $('#ces-meme-caption');
+                    setMemePicture(attendFrom);
                     updateFbSubmit(captionBox.attr('placeholder'));
                     captionBox.on('change keyup paste', function() {
                         updateFbSubmit($(this).val());
@@ -56,6 +58,16 @@ $(function() {
 
     function removeAnswer() {
         answered_count--;
+    }
+
+    function setMemePicture(attendFrom) {
+        var $memePicture = $('#ces-meme-picture');
+        var $memePictures = $('#meme-pictures');
+        var src = $memePictures.find('#domestic').attr('src');
+        if(attendFrom == 'international') {
+            src = $memePictures.find('#international').attr('src');
+        }
+        $memePicture.attr('src', src);
     }
 
     function go(from) {

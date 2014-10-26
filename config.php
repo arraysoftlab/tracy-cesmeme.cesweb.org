@@ -9,3 +9,10 @@ tag it #CES2015";
 $description = "CES is awesome. Memes are awesome. Put them together and you have the ultra-awesome CES Meme Generator. Using proprietary algorithms and decades of data,
 the CES Meme Generator will automatically create a message you can share on Facebook and other social media to highlight why you’ll be at the 2015 CES. All you have to do is
 answer a few simple and fun questions.";
+
+$domestic_image_dir = 'assets/meme/domestic';
+$international_image_dir = 'assets/meme/international';
+$domestic_images = array_diff(scandir($domestic_image_dir), array('..', '.'));
+$international_images = array_diff(scandir($international_image_dir), array('..', '.'));
+$random_domestic_image = $domestic_images[rand(2, count($domestic_images) + 2 - 1)];
+$random_international_image = $international_images[rand(2, count($international_images) + 2 - 1)];
