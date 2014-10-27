@@ -85,8 +85,10 @@ $(function() {
 
     var $fb_btn = $('#fb-post-btn');
     var $tw_btn = $('#tw-post-btn');
+    var $gp_btn = $('#gp-post-btn');
     var $fb_ini_href = $fb_btn.attr('href');
     var $tw_ini_href = $tw_btn.attr('href');
+    var $gp_ini_href = $gp_btn.attr('href');
     function updatePostButtons(message) {
         var $picture = $('#ces-meme-picture');
         var query = 'post_on_fb&picture=' + encodeURIComponent($picture.attr('src')).replace(/\%20/g, '+') +
@@ -95,5 +97,7 @@ $(function() {
         query = 'post_on_tw&picture=' + encodeURIComponent($picture.attr('src')).replace(/\%20/g, '+') +
             '&message=' + message + '&query_end';
         $tw_btn.attr('href', $tw_ini_href + '?' + query);
+        query = 'url=' + encodeURIComponent($picture.attr('src')).replace(/\%20/g, '+');
+        $gp_btn.attr('href', $gp_ini_href + '?' + query);
     }
 });
