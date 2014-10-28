@@ -13,7 +13,8 @@
     <link href="css/responsive.css" rel="stylesheet" type="text/css" media="all">
     <!-- END: STYLESHEET -->
     <!-- SET: SCRIPTS -->
-    <script src="js/jquery-2.1.1.js" type="text/javascript"></script>
+    <script src="js/jquery-1.11.1.js" type="text/javascript"></script>
+    <script src="js/jquery.scrollTo.js" type="text/javascript"></script>
     <script src="js/app.js" type="text/javascript"></script>
     <!-- END: SCRIPTS -->
 </head>
@@ -38,6 +39,7 @@
                 <a href="#" class="start-meme">Start your CES meme-ing here.</a>
             </div>
             <span class="clear"></span>
+            <div id="validation-error" style="display: none">Please answer all questions first.</div>
             <div class="feedback">
                 <div class="sub-container">
                     <div class="container-image" id="qone">
@@ -119,7 +121,6 @@
                     </div>
                     <span class="clear"></span>
                     <a id="create-meme" href="#create-meme">CREATE YOUR CES MEME</a>
-                    <span class="validation-error" style="display: none">Please answer all questions first.</span>
                 </div>
             </div>
             <span class="clear"></span>

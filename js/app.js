@@ -3,8 +3,14 @@ $(function() {
     var answered_count = 0;
     $('.start-meme').click(function(e) {
         e.preventDefault();
-        $('.banner').hide('slow', function() {
-            $('.feedback').show();
+        $('.banner').animate({
+            opacity: 0.25,
+            height: "hide"
+        }, 1000, function() {
+            $('.feedback').animate({
+                opacity: 1.0,
+                height: "show"
+            }, 1000);
         });
     });
     $('#create-meme').click(function(e) {
@@ -22,19 +28,20 @@ $(function() {
                 });
             });
         } else {
-            $('.validation-error').show();
+            $('#validation-error').show();
         }
     });
     $('.sub-container').each(function(idx, el) {
         $(el).attr('id', 'feedback-' + (idx+1));
+        var $option = $(el).find('.feedback-options li a');
         if($('.sub-container').length - 1 > idx) {
-            $(el).find('.feedback-options li a').attr('href', '#feedback-' + (idx+2));
+            $option.attr('href', '#feedback-' + (idx+2));
         } else {
-            $(el).find('.feedback-options li a').attr('href', '#create-meme');
-            $(el).find('.feedback-options li a').click(function(e) {
-                e.preventDefault();
-            });
+            $option.attr('href', '#create-meme');
         }
+        $option.click(function(e) {
+            e.preventDefault();
+        });
     });
     var $options = $('.feedback-options li a');
     $options.click(function() {
@@ -44,16 +51,19 @@ $(function() {
             removeAnswer();
         }
         $(this).addClass('selected');
-        addAnswer();
-        go(this);
+        if(addAnswer()) {
+            $(this).scrollTo();
+        }
     });
 
     function addAnswer() {
         answered_count++;
         if(answered_count == total_questions) {
-            $('.validation-error').hide();
-            go($('#create-meme')[0])
+            $('#validation-error').hide();
+            $('#create-meme').scrollHere();
+            return false;
         }
+        return true;
     }
 
     function removeAnswer() {
@@ -70,7 +80,7 @@ $(function() {
         $memePicture.attr('src', src);
     }
 
-    function go(from) {
+    /*function scrollFrom(from) {
         if (location.pathname.replace(/^\//,'') == from.pathname.replace(/^\//,'') && location.hostname == from.hostname) {
             var target = $(from.hash);
             target = target.length ? target : $('[name=' + from.hash.slice(1) +']');
@@ -81,7 +91,7 @@ $(function() {
                 return false;
             }
         }
-    }
+    }*/
 
     var $fb_btn = $('#fb-post-btn');
     var $tw_btn = $('#tw-post-btn');
