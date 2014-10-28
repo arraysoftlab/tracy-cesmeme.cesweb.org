@@ -28,7 +28,7 @@ $(function() {
                 });
             });
         } else {
-            $('#validation-error').show();
+            $('#validation-error').show().scrollHere();
         }
     });
     $('.sub-container').each(function(idx, el) {
@@ -79,19 +79,6 @@ $(function() {
         }
         $memePicture.attr('src', src);
     }
-
-    /*function scrollFrom(from) {
-        if (location.pathname.replace(/^\//,'') == from.pathname.replace(/^\//,'') && location.hostname == from.hostname) {
-            var target = $(from.hash);
-            target = target.length ? target : $('[name=' + from.hash.slice(1) +']');
-            if (target.length) {
-                $('html,body').animate({
-                    scrollTop: target.offset().top
-                }, 1000);
-                return false;
-            }
-        }
-    }*/
 
     var $fb_btn = $('#fb-post-btn');
     var $tw_btn = $('#tw-post-btn');
