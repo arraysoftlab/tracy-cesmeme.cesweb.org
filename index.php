@@ -11,10 +11,12 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/font-face.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/responsive.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/sweet-alert.css" rel="stylesheet" type="text/css" media="all">
     <!-- END: STYLESHEET -->
     <!-- SET: SCRIPTS -->
     <script src="js/jquery-1.11.1.js" type="text/javascript"></script>
     <script src="js/jquery.scrollTo.js" type="text/javascript"></script>
+    <script src="js/sweet-alert.min.js" type="text/javascript"></script>
     <script src="js/app.js" type="text/javascript"></script>
     <!-- END: SCRIPTS -->
 </head>
@@ -39,7 +41,6 @@
                 <a href="#" class="start-meme">Start your CES meme-ing here.</a>
             </div>
             <span class="clear"></span>
-            <div id="validation-error" style="display: none">Please answer all questions first.</div>
             <div class="feedback">
                 <div class="sub-container">
                     <div class="container-image" id="qone">
