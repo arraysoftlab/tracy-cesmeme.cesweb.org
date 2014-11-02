@@ -3,7 +3,7 @@
 $context_uri = "/cesmeme.cesweb.org";
 $base_url = "http://$_SERVER[HTTP_HOST]";
 $absolute_url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-$picture = $absolute_url . 'assets/meme/international/astronauts.png';
+$picture = $absolute_url . 'assets/meme/international/CES_MEME_100Contacts1.jpg';
 $message = "I just generated the world's greatest CES Meme. Be sure to create your own CES Meme and share it to promote why you're attending the show. Don't forget to
 tag it #CES2015";
 $description = "CES is awesome. Memes are awesome. Put them together and you have the ultra-awesome CES Meme Generator. Using proprietary algorithms and decades of data,
