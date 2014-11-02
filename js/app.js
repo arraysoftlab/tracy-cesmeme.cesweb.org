@@ -16,8 +16,14 @@ $(function () {
     $('#create-meme').click(function (e) {
         e.preventDefault();
         if (answered_count == total_questions) {
-            $('.feedback').hide('slow', function () {
-                $('.ces-meme').show('slow', function () {
+            $('.feedback').animate({
+                opacity: 0.25,
+                height: "hide"
+            }, 1000, function () {
+                $('.ces-meme').animate({
+                    opacity: 1.0,
+                    height: "show"
+                }, 1000, function() {
                     var attendFrom = $('.attend-from .feedback-options ul li a.selected').data('option');
                     var captionBox = $('#ces-meme-caption');
                     setMemePicture(attendFrom);
@@ -82,6 +88,7 @@ $(function () {
             src = $memePictures.find('#international').attr('src');
         }
         $memePicture.attr('src', src);
+        $('#download-meme').attr('href', src);
     }
 
     var $fb_btn = $('#fb-post-btn');

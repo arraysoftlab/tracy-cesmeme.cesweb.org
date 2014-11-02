@@ -402,7 +402,7 @@ body {
 }
 
 .random-image {
-    float: left;
+    margin: 0px auto;
 }
 
 .random-image img {

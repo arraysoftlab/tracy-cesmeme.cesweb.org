@@ -156,7 +156,7 @@
                         <span class="clear"></span>
                         <div class="download">
                             <ul>
-                                <li><a href="#">Download File</a></li>
+                                <li><a id="download-meme" href="#" download="CESMEME2015.jpg">Download File</a></li>
                                 <li>Right click (Option click on Mac) and “Save Link As…”</li>
                             </ul>
                             <span class="clear"></span>
