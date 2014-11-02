@@ -46,7 +46,7 @@ if(isset($_GET['post_on_fb'])) {
                 $session, 'POST', '/me/feed', array(
                     'link' => $absolute_url,
                     'picture' => $picture,
-                    'message' => $message,
+                    'message' => resolveHasTags($message),
                     'description' => $description
                 )
             ))->execute()->getGraphObject();

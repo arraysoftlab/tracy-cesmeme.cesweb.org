@@ -19,7 +19,7 @@ if(isset($_GET['post_on_tw'])) {
         'media' => $picture
     ));
     $reply = $cb->statuses_update(array(
-        'status' => urldecode(substr(urlencode($message), 0, 120)),
+        'status' => urldecode(substr(urlencode(resolveHasTags($message)), 0, 120)),
         'media_ids' => $reply->media_id_string
     ));
 }
