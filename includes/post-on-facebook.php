@@ -42,9 +42,10 @@ if(isset($_GET['post_on_fb'])) {
             $message = $_GET['message'];
         }
         try {
+            $redirect_to = $base_url . $context_uri;
             $response = (new FacebookRequest(
                 $session, 'POST', '/me/feed', array(
-                    'link' => $absolute_url,
+                    'link' => $redirect_to,
                     'picture' => $picture,
                     'message' => resolveHasTags($message),
                     'description' => $description
@@ -55,8 +56,7 @@ if(isset($_GET['post_on_fb'])) {
         } catch(Exception $e) {
             echo "#{$e->getCode()}: {$e->getMessage()}";
         }
-        $redirect_to = $base_url . $context_uri;
-        header("Location: $redirect_to");
+        header("Location: $redirect_to?close_window=true");
         exit();
     } else {
         $permissions = array('email', 'publish_actions');

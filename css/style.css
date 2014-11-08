@@ -99,7 +99,7 @@ html {
 }
 
 body {
-    color: #b1b1b1;
+    color: #404040;
     font-size: 12px;
 }
 
@@ -542,12 +542,16 @@ body {
     padding: 10px 0 25px;
 }
 
-.footer p {
+.footer {
     font-family: 'MyriadProRegular';
     font-size: 14px;
     line-height: 18px;
-    color: #000000;
     padding-top: 15px;
+    color: #404040
+}
+
+.footer p b {
+	font-family: 'MyriadProBold';
 }
 
 .terms {

@@ -18,6 +18,17 @@
     <script src="js/jquery.scrollTo.js" type="text/javascript"></script>
     <script src="js/sweet-alert.min.js" type="text/javascript"></script>
     <script src="js/app.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        (function() {
+            <?php
+            if(isset($_GET['close_window'])) {
+                    ?>
+            window.close();
+            <?php
+            }
+            ?>
+        })();
+    </script>
     <!-- END: SCRIPTS -->
 </head>
 <body>
@@ -137,12 +148,14 @@
                         <textarea id="ces-meme-caption" placeholder="<?php echo $message ?>"></textarea>
                         <ul class="share">
                             <li>
-                                <a id="fb-post-btn" href="<?php echo $context_uri ?>/includes/post-on-facebook.php">
+                                <a id="fb-post-btn" href="<?php echo $context_uri ?>/includes/post-on-facebook.php"
+                                   onclick="javascript:window.open(this.href,  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=500');return false;">
                                     <img src="images/fb-share-btn.png" alt="share on facebook" width="218" height="52">
                                 </a>
                             </li>
                             <li>
-                                <a id="tw-post-btn" href="<?php echo $context_uri ?>/includes/post-on-twitter.php">
+                                <a id="tw-post-btn" href="<?php echo $context_uri ?>/includes/post-on-twitter.php"
+                                    onclick="javascript:window.open(this.href,  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=500');return false;">
                                     <img src="images/twt-share-btn.png" alt="share on twitter" width="219" height="53">
                                 </a>
                             </li>
@@ -176,8 +189,35 @@
         <div id="footer">
             <div class="footer">
                 <p>By participating in this activity you confirm that, as of the upload date, you are at least 18 years of age or older. </p>
-                <a href="#" class="terms">Terms & Conditions</a>
-                <p>Register now for the 2015 International CES</p>
+                <a href="http://www.cesweb.org/CESTimeTravelerTermsConditions" class="terms" target="_blank">Terms & Conditions</a>
+                <span class="clear"></span>
+                <div style="margin-top: 30px;">
+                    <div style="width: 25%;float: left;">
+                        <p>
+                            <img src="images/ces-footer-logo.jpg" alt="ces logo">
+                        </p>
+                    </div>
+                    <div style="width: 50%;float: left;text-align: left;">
+                        <h3>LAS VEGAS, NV</h3>
+                        JANUARY 6-9, 2015
+                        <p style="padding-top: 5px;"><b>CES Tech East:</b> Las Vegas Convention and World Trade Center (LVCC)/the Westgate Las Vegas (Westgate) and
+                            Renaissance
+                            Las Vegas (Renaissance)</p>
+                        <p style="padding-top: 5px;"><b>CES Tech West:</b> Sands Expo (Sands), The Venetian, The Palazzo, Wynn Las Vegas and Encore at Wynn (Wynn/Encore)</p>
+                        <p style="padding-top: 5px;"><b>C Space at ARIA</b></p>
+                    </div>
+                    <div style="width: 25%;float: left;margin-top: 15px;">
+                        <p style="width: 30%;float: left;text-align: right;">
+                            <a href="http://www.cesweb.org">CESweb.org</a> <a href="https://twitter.com/intent/tweet?
+url=cesmeme.cesweb.org&hashtags=CES2015" target="_blank">#CES2015</a>
+                        </p>
+                        <p style="width: 70%;float: right;">
+                            <a href="https://ces.itnint.com/CES15/regonline/RegLogin.aspx" style="float: left;margin: 5px 0 0 5px;" target="_blank"><img src="images/register-now-button.png" alt="register now"></a>
+                        </p>
+                    </div>
+                </div>
+                <div style="margin-top: 20px;">
+                </div>
             </div>
             <span class="clear"></span>
         </div>
