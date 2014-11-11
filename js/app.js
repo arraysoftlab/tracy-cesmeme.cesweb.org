@@ -32,6 +32,12 @@ $(function () {
                         updatePostButtons($(this).val());
                     });
                 });
+                var feedback = {};
+                $('.sub-container').each(function() {
+                    var question = $(this).find('.question').text();
+                    var answer = $(this).find('.feedback-options a.selected').text();
+                    _gaq.push(['_trackEvent', question, answer]);
+                });
             });
         } else {
             swal({
