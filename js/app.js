@@ -3,41 +3,27 @@ $(function () {
     var answered_count = 0;
     $('.start-meme').click(function (e) {
         e.preventDefault();
-        $('.banner').animate({
-            opacity: 0.25,
-            height: "hide"
-        }, 1000, function () {
-            $('.feedback').animate({
-                opacity: 1.0,
-                height: "show"
-            }, 1000);
-        });
+        $('.banner').fadeOut('500');
+        $('.feedback').fadeIn('500');
     });
     $('#create-meme').click(function (e) {
         e.preventDefault();
         if (answered_count == total_questions) {
-            $('.feedback').animate({
-                opacity: 0.25,
-                height: "hide"
-            }, 1000, function () {
-                $('.ces-meme').animate({
-                    opacity: 1.0,
-                    height: "show"
-                }, 1000, function() {
-                    var attendFrom = $('.attend-from .feedback-options ul li a.selected').data('option');
-                    var captionBox = $('#ces-meme-caption');
-                    setMemePicture(attendFrom);
-                    updatePostButtons(captionBox.attr('placeholder'));
-                    captionBox.on('change keyup paste', function () {
-                        updatePostButtons($(this).val());
-                    });
+            $('.feedback').fadeOut('500');
+            $('.ces-meme').fadeIn('500', function() {
+                var attendFrom = $('.attend-from .feedback-options ul li a.selected').data('option');
+                var captionBox = $('#ces-meme-caption');
+                setMemePicture(attendFrom);
+                updatePostButtons(captionBox.attr('placeholder'));
+                captionBox.on('change keyup paste', function () {
+                    updatePostButtons($(this).val());
                 });
-                var feedback = {};
-                $('.sub-container').each(function() {
-                    var question = $(this).find('.question').text();
-                    var answer = $(this).find('.feedback-options a.selected').text();
-                    _gaq.push(['_trackEvent', question, answer]);
-                });
+            });
+            var feedback = {};
+            $('.sub-container').each(function() {
+                var question = $(this).find('.question').text();
+                var answer = $(this).find('.feedback-options a.selected').text();
+                _gaq.push(['_trackEvent', question, answer]);
             });
         } else {
             swal({

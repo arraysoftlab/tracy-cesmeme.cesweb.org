@@ -30,16 +30,16 @@
         })();
     </script>
     <!-- END: SCRIPTS -->
-    <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-2664056-24']);
-        _gaq.push(['_trackPageview']);
-        (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-    </script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-2664056-24', 'auto');
+	  ga('send', 'pageview');
+	
+	</script>
 </head>
 <body>
 <?php include('config.php') ?>
@@ -56,10 +56,10 @@
         <!-- main-content Starts -->
         <div class="main-content">
             <div class="banner">
-                <div class="banner-image"><img src="images/main_img.png" alt="banner-image" height="245" width="1081"></div>
+                <div class="banner-image"><img src="images/main_img.jpg" alt="banner-image"></div>
                 <p><?php echo $description ?></p>
                 <span class="clear"></span>
-                <a href="#" class="start-meme">Start your CES meme-ing here.</a>
+                <a href="#" onclick="_gaq.push(['_trackEvent', 'Step1', 'clicked']" class="start-meme">Start your CES meme-ing here.</a>
             </div>
             <span class="clear"></span>
             <div class="feedback">
@@ -142,7 +142,7 @@
                         <span class="clear"></span>
                     </div>
                     <span class="clear"></span>
-                    <a id="create-meme" href="#create-meme">CREATE YOUR CES MEME</a>
+                    <a id="create-meme" href="#create-meme" onclick="_gaq.push(['_trackEvent', 'Step2', 'clicked']">CREATE YOUR CES MEME</a>
                 </div>
             </div>
             <span class="clear"></span>
@@ -188,7 +188,7 @@
                 </div>
                 <span class="clear"></span>
                 <div class="highlight">
-                    <p>We can’t wait to see you at the 2015 CES! Check out our awesome schedule of conferences and events <a href="http://cesweb.org/conference" class="cesweb">CESweb.org/conference</a>.
+                    <p>We can’t wait to see you at the 2015 CES!<br> Check out our awesome schedule of <a href="http://cesweb.org/conference" class="cesweb">conferences and events</a>.
                     </p>
                 </div>
             </div>
