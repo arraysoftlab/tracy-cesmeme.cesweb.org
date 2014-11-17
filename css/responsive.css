@@ -233,6 +233,15 @@
         font-size: 13px;
         line-height: 16px
     }
+    .logo-widget {
+        width: 280px;
+    }
+    .event-widget {
+        width: 600px;
+    }
+    .register-widget {
+        width: 280px;
+    }
 
 }
 
@@ -471,6 +480,18 @@
         line-height: 16px
     }
 
+    .ces-event {
+        width: 600px;
+    }
+    .logo-widget {
+        width: 230px;
+    }
+    .event-widget {
+        width: 450px;
+    }
+    .register-widget {
+        width: 230px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -707,6 +728,15 @@
         font-size: 13px;
         line-height: 16px
     }
+    .logo-widget {
+        width: 200px;
+    }
+    .event-widget {
+        width: 280px;
+    }
+    .register-widget {
+        width: 200px;
+    }
 }
 
 @media screen and (min-width: 600px) and (max-width: 767px) {
@@ -942,7 +972,31 @@
         font-size: 11px;
         line-height: 16px
     }
-
+    .logo-widget {
+        width: 600px;
+    }
+    .logo-widget p {
+        width: 220px;
+        margin: 0 auto 10px;
+    }
+    .event-widget {
+        width: 600px;
+    }
+    .register-widget {
+        width: 600px;
+    }
+    .register-widget p {
+        width: 600px !important;
+        margin: 0 auto;
+        text-align: center !important;
+        float: none;
+    }
+    .register-widget p a {
+        float: none !important;
+    }
+    .register-widget p img {
+        width: auto !important;
+    }
 }
 
 @media screen and (min-width: 480px) and (max-width: 599px) {
@@ -1185,10 +1239,35 @@
         font-size: 11px;
         line-height: 16px
     }
+    .logo-widget {
+        width: 480px;
+    }
+    .logo-widget p {
+        width: 220px;
+        margin: 0 auto 10px;
+    }
+    .event-widget {
+        width: 480px;
+    }
+    .register-widget {
+        width: 400px;
+    }
+    .register-widget p {
+        width: 400px !important;
+        margin: 0 auto;
+        text-align: center !important;
+        float: none !important;
+    }
+    .register-widget p a {
+        float: none !important;
+    }
+    .register-widget p img {
+        width: auto !important;
+    }
 
 }
 
-@media only screen and (min-width: 320px) and (max-width: 479px) {
+@media only screen and (min-width: 0px) and (max-width: 479px) {
     .wrapper {
         margin: 0 auto;
         width: 100%;
@@ -1426,6 +1505,31 @@
     .terms {
         font-size: 11px;
         line-height: 16px
+    }
+    .logo-widget {
+        width: 320px;
+    }
+    .logo-widget p {
+        width: 220px;
+        margin: 0 auto 10px;
+    }
+    .event-widget {
+        width: 320px;
+    }
+    .register-widget {
+        width: 320px;
+    }
+    .register-widget p {
+        width: 320px !important;
+        margin: 0 auto;
+        text-align: center !important;
+        float: none;
+    }
+    .register-widget p a {
+        float: none !important;
+    }
+    .register-widget p img {
+        width: auto !important;
     }
 
 }

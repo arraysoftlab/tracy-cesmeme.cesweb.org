@@ -205,7 +205,6 @@ body {
 }
 
 .feedback {
-    display: none;
     width: 1082px;
     margin: 0 184px 0 183px;
     float: left;
@@ -392,9 +391,6 @@ body {
     text-align: center;
     margin: 0 0 60px;
 }
-.ces-meme {
-    display: none;
-}
 .post {
     width: 885px;
     margin: 0 260px 0 303px;
@@ -574,4 +570,17 @@ body {
     font-family: 'MyriadProRegular';
     border: 1px solid red;
     text-align: center;
+}
+.footer-widget {
+    float: left;
+    padding: 10px;
+}
+.logo-widget {
+    width: 350px;
+}
+.event-widget {
+    width: 680px;
+}
+.register-widget {
+    width: 350px;
 }

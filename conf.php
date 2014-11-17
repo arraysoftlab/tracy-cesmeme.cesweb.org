@@ -1,6 +1,6 @@
 <?php
 //TODO: you have to change context uri here and site url in developers.facebook.com settings
-$context_uri = "";
+$context_uri = "/cesmeme.cesweb.org";
 $base_url = "http://$_SERVER[HTTP_HOST]";
 $absolute_url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 $picture = $absolute_url . 'assets/meme/international/CES_MEME_100Contacts1.jpg';
