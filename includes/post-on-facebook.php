@@ -20,7 +20,7 @@ include('lib/Facebook/FacebookRequestException.php');
 include('lib/Facebook/FacebookAuthorizationException.php');
 include('lib/Facebook/FacebookPermissionException.php');
 
-include('../config.php');
+include('../conf.php');
 
 if(isset($_GET['post_on_fb'])) {
     FacebookSession::setDefaultApplication('371501986308208', '69ae6db203d02b3ddb477d823d3bffa2');

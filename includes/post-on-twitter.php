@@ -5,7 +5,7 @@ use Codebird\Codebird;
 
 require_once('lib/twitter-codebird/codebird.php');
 
-require_once('../config.php');
+require_once('../conf.php');
 
 if(isset($_GET['post_on_tw'])) {
     Codebird::setConsumerKey("Kj72AcDtVn5ZChMeEdLZadnbe", "sniKxYn5Lbmiic3oYBsCPOpBBWYV649P850Tv3gsQdKBg9CAxF");

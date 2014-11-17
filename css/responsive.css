@@ -989,7 +989,7 @@
         width: 600px !important;
         margin: 0 auto;
         text-align: center !important;
-        float: none;
+        float: none !important;
     }
     .register-widget p a {
         float: none !important;
@@ -1520,10 +1520,10 @@
         width: 320px;
     }
     .register-widget p {
-        width: 320px !important;
+        width: 260px !important;
         margin: 0 auto;
         text-align: center !important;
-        float: none;
+        float: none !important;
     }
     .register-widget p a {
         float: none !important;
