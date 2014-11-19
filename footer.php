@@ -10,7 +10,7 @@
         <div style="margin-top: 30px;">
             <div class="footer-widget logo-widget">
                 <p>
-                    <img src="<?php echo $context_uri ?>/images/ces-footer-logo.jpg" alt="ces logo" style="width: 100%">
+                    <img src="<?php echo $context_uri ?>/images/ces-footer-logo.jpg" alt="ces logo" style="width: 100%; max-width:228px">
                 </p>
             </div>
             <div class="footer-widget event-widget">

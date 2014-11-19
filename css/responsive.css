@@ -2,7 +2,7 @@
 
     .wrapper {
         margin: 0 auto;
-        width: 100%;
+        width: 90%;
     }
 
     .container {
@@ -56,7 +56,7 @@
     }
 
     .banner-image img {
-        width: 100%;
+        width: 75%;
         height: auto;
     }
 
@@ -248,7 +248,7 @@
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
     .wrapper {
         margin: 0 auto;
-        width: 100%;
+        width: 90%;
     }
 
     .container {
@@ -299,6 +299,7 @@
         float: left;
         margin: 0px 0px 68px;
         float: left;
+
     }
 
     .banner-image img {
@@ -497,7 +498,7 @@
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .wrapper {
         margin: 0 auto;
-        width: 100%;
+        width: 90%;
     }
 
     .container {
@@ -1025,6 +1026,7 @@
         background-size: 100% 100%;
     }
 
+	    
     .trade-mark {
         color: #5ecdd8;
         display: inline-block;
@@ -1053,6 +1055,7 @@
         float: left;
         margin: 0 0 25px;
         float: left;
+        display: none
     }
 
     .banner-image img {
@@ -1268,7 +1271,8 @@
 }
 
 @media only screen and (min-width: 0px) and (max-width: 479px) {
-    .wrapper {
+	    
+	.wrapper {
         margin: 0 auto;
         width: 100%;
     }
@@ -1321,6 +1325,7 @@
         float: left;
         margin: 0 0 25px;
         float: left;
+        display:none
     }
 
     .banner-image img {
