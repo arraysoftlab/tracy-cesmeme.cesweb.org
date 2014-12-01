@@ -42,12 +42,13 @@ if(isset($_GET['post_on_fb'])) {
             $message = $_GET['message'];
         }
         try {
+            $caption = resolveHasTags($message);
             $redirect_to = $base_url . $context_uri;
             $response = (new FacebookRequest(
                 $session, 'POST', '/me/feed', array(
-                    'link' => $redirect_to,
+                    'link' => $redirect_to . '/viewmeme?image=' . urlencode($picture) . '&' . 'caption=' . str_replace(PHP_EOL, '|n|', urlencode($caption)),
                     'picture' => $picture,
-                    'message' => resolveHasTags($message),
+                    'message' => $caption,
                     'description' => $description
                 )
             ))->execute()->getGraphObject();

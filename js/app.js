@@ -67,22 +67,19 @@ $(function () {
         var $tw_ini_href = $tw_btn.attr('href');
         var $gp_ini_href = $gp_btn.attr('href');
         var captionBox = $('#ces-meme-caption');
-        setMemePicture();
-        updatePostButtons(captionBox.attr('placeholder'));
-        captionBox.on('change keyup paste', function () {
-            updatePostButtons($(this).val());
-        });
+
         function setMemePicture() {
             var $memePicture = $('#ces-meme-picture');
             var $memePictures = $('#meme-pictures');
-            var src = $memePictures.find('#domestic').attr('src');
-            if (location.search.indexOf('international') != -1) {
-                src = $memePictures.find('#international').attr('src');
+            if($memePicture.attr('src').length == 0) {
+                var src = $memePictures.find('#domestic').attr('src');
+                if (location.search.indexOf('international') != -1) {
+                    src = $memePictures.find('#international').attr('src');
+                }
+                $memePicture.attr('src', src);
+                $('#download-meme').attr('href', src);
             }
-            $memePicture.attr('src', src);
-            $('#download-meme').attr('href', src);
         }
-
 
         function updatePostButtons(message) {
             var $picture = $('#ces-meme-picture');
@@ -95,5 +92,20 @@ $(function () {
             query = 'url=' + encodeURIComponent($picture.attr('src')).replace(/\%20/g, '+');
             $gp_btn.attr('href', $gp_ini_href + '?' + query);
         }
+
+        setMemePicture();
+        updatePostButtons(captionBox.attr('placeholder'));
+        captionBox.on('change keyup paste', function () {
+            updatePostButtons($(this).val());
+        });
     }
+
+    $('.post-btn').click(function() {
+        var popupWidth = 750;
+        var popupHeight = 500;
+        var left = (screen.width / 2) - (popupWidth / 2);
+        var top = (screen.height / 2) - (popupHeight / 2);
+        window.open(this.href,  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=' + popupHeight + ',width=' + popupWidth +',top='+top+',left='+left);
+        return false;
+    })
 });

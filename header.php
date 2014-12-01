@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>CES MEME Generator</title>
+    <title><?php echo $title; ?></title>
     <!-- SET: FAVICON -->
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <!-- END: FAVICON -->
@@ -20,38 +20,29 @@
     <script src="<?php echo $context_uri ?>/js/sweet-alert.min.js" type="text/javascript"></script>
     <script src="<?php echo $context_uri ?>/js/app.js" type="text/javascript"></script>
     <script type="text/javascript">
-        (function() {
+        $(function() {
             <?php
             if(isset($_GET['close_window'])) {
                     ?>
-            window.close();
+            $('body').html('<img src="images/meme-shared.jpg">');
+            setTimeout(function() {
+                window.close();
+            }, 5000);
             <?php
             }
             ?>
-        })();
+        });
     </script>
     <!-- END: SCRIPTS -->
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-2664056-24', 'auto');
-        ga('send', 'pageview');
-
-    </script>
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3975226-4']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
 </head>
 <body>
-<!-- wrapper starts -->
-<div class="wrapper">
-    <!-- container starts -->
-    <div class="container">
-        <!-- Header Starts -->
-        <div class="header">
-            <h2>The Official 2015 International CES <span class="trade-mark">&reg;</span> Meme Generator</h2>
-        </div>
-        <span class="clear"></span>
-        <!-- Header ends -->
-        <!-- main-content Starts -->
-        <div class="main-content">

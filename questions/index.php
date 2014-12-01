@@ -1,4 +1,18 @@
 <?php include "../header.php" ?>
+<!-- wrapper starts -->
+<div class="wrapper">
+    <!-- container starts -->
+    <div class="container">
+        <!-- Header Starts -->
+        <div class="header">
+	        <img src="/images/CES-Meme-Head.gif" style="width: 95%; max-width: 100%; margin: 30px 0">
+	        
+            <!--h2>The Official 2015 International CES <span class="trade-mark">&reg;</span> Meme Generator</h2-->
+        </div>
+        <span class="clear"></span>
+        <!-- Header ends -->
+        <!-- main-content Starts -->
+        <div class="main-content">
 <div class="feedback">
     <div class="sub-container">
         <div class="container-image" id="qone">

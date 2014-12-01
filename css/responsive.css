@@ -240,7 +240,7 @@
         width: 600px;
     }
     .register-widget {
-        width: 280px;
+  
     }
 
 }
@@ -491,7 +491,7 @@
         width: 450px;
     }
     .register-widget {
-        width: 230px;
+
     }
 }
 
@@ -736,7 +736,6 @@
         width: 280px;
     }
     .register-widget {
-        width: 200px;
     }
 }
 
@@ -972,22 +971,31 @@
     .terms {
         font-size: 11px;
         line-height: 16px
-    }
+}}
+
+/***** FOOTER *******/
+
+@media screen and (max-width: 767px) {
+
+
     .logo-widget {
-        width: 600px;
+        width: 100%;
     }
     .logo-widget p {
         width: 220px;
         margin: 0 auto 10px;
     }
     .event-widget {
-        width: 600px;
+        width: 100%;
+        text-align: center
     }
     .register-widget {
-        width: 600px;
+	    width: 100%;
+	
+
     }
     .register-widget p {
-        width: 600px !important;
+   
         margin: 0 auto;
         text-align: center !important;
         float: none !important;
@@ -997,8 +1005,7 @@
     }
     .register-widget p img {
         width: auto !important;
-    }
-}
+    }}
 
 @media screen and (min-width: 480px) and (max-width: 599px) {
     .wrapper {
@@ -1242,31 +1249,7 @@
         font-size: 11px;
         line-height: 16px
     }
-    .logo-widget {
-        width: 480px;
-    }
-    .logo-widget p {
-        width: 220px;
-        margin: 0 auto 10px;
-    }
-    .event-widget {
-        width: 480px;
-    }
-    .register-widget {
-        width: 400px;
-    }
-    .register-widget p {
-        width: 400px !important;
-        margin: 0 auto;
-        text-align: center !important;
-        float: none !important;
-    }
-    .register-widget p a {
-        float: none !important;
-    }
-    .register-widget p img {
-        width: auto !important;
-    }
+
 
 }
 
@@ -1511,30 +1494,6 @@
         font-size: 11px;
         line-height: 16px
     }
-    .logo-widget {
-        width: 320px;
-    }
-    .logo-widget p {
-        width: 220px;
-        margin: 0 auto 10px;
-    }
-    .event-widget {
-        width: 320px;
-    }
-    .register-widget {
-        width: 320px;
-    }
-    .register-widget p {
-        width: 260px !important;
-        margin: 0 auto;
-        text-align: center !important;
-        float: none !important;
-    }
-    .register-widget p a {
-        float: none !important;
-    }
-    .register-widget p img {
-        width: auto !important;
-    }
+
 
 }

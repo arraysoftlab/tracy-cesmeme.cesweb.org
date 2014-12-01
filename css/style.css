@@ -586,5 +586,6 @@ body {
     text-align: left
 }
 .register-widget {
-    width: 350px;
+    width: 150px;
+    text-align: center
 }
